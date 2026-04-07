@@ -1,0 +1,172 @@
+/* =========================
+   FONT
+========================= */
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/996b00fb-4b7a-403d-8da2-ce2225450681.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+  --bg: #ffffff;
+  --text: #111;
+  --muted: #5e5e5e;
+  --box: #E0E0E0;
+}
+
+/* =========================
+   RESET + GLOBAL F
+========================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  color: inherit;
+}
+
+/* =========================
+   BASE
+========================= */
+
+html {
+  font-family: 'GeistMono', monospace;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  padding: 1rem;
+}
+
+/* =========================
+   LINKS (GLOBAL)
+========================= */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.links {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+  margin-bottom: 40px;
+}
+
+/* =========================
+   BOX
+========================= */
+
+.box {
+  background: var(--box);
+  padding: 1rem;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  line-height: 1.6;
+  max-width: 60ch;
+}
+
+/* =========================
+   ARROW
+========================= */
+
+.arrow::before {
+  content: "→ ";
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.small {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 40px;
+}
+
+/* =========================
+   ACCORDION
+========================= */
+
+.accordion-item {
+  border-top: 1px solid var(--box);
+}
+
+.accordion-header {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+/* arrow */
+.accordion-header::before {
+  content: "→ ";
+}
+
+/* content */
+.accordion-content {
+  display: none;
+  padding-left: 16px;
+  margin-top: 6px;
+}
+
+.accordion-content ul {
+  list-style: none;
+}
+
+.accordion-content li {
+  margin-bottom: 6px;
+}
+
+.accordion-content a {
+  font-size: 18px;
+  color: var(--muted);
+}
