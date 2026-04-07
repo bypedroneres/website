@@ -177,12 +177,12 @@ a:hover {
 }
 
 .footer {
-  font-size: 13px;
   display: flex;
-  position: fixed;
-  bottom: 1rem;
+  width: 100%;
+  font-size: 14px;
   color: var(--muted);
-  margin-top: 40px;
+  bottom: 1px;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
