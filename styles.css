@@ -184,3 +184,11 @@ a:hover {
   color: var(--muted);
   margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
