@@ -3,311 +3,230 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pedro Neres</title>
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <title>pedro neres</title>
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   />
+  <style>
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+    .blink { animation: blink 1.5s infinite; }
+    .reveal { opacity:0; transform:translateY(18px); transition:opacity .65s, transform .65s; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+  </style>
 </head>
 
-<body class="bg-zinc-50 text-zinc-900">
+<body class="bg-white text-zinc-900">
 
-<div class="max-w-5xl mx-auto px-6 pt-28 pb-12">
-
- <header class="fixed top-0 left-0 right-0 z-50 bg-zinc-50/80 backdrop-blur border-b border-zinc-100">
+<!-- HEADER — igual ao original -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur border-b border-zinc-100">
   <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/">
+    <img src="/images/favicon.png"
+     alt="Pedro no Louvre"
+     class="w-[30px] aspect-square object-cover object-center" />
+    </a>
 
-    <div class="text-sm">pedro neres</div>
 
     <nav class="flex items-center gap-5 text-zinc-500 text-lg">
-
-      <a
-        href="https://instagram.com/pedro___neres"
-        target="_blank"
-        class="hover:text-zinc-900 transition"
-      >
+      <a href="https://instagram.com/pedro___neres" target="_blank" class="hover:text-zinc-900 transition">
         <i class="fa-brands fa-instagram"></i>
       </a>
-
-      <a
-        href="https://www.tiktok.com/@pedro__neres"
-        target="_blank"
-        class="hover:text-zinc-900 transition"
-      >
+      <a href="https://www.tiktok.com/@pedro__neres" target="_blank" class="hover:text-zinc-900 transition">
         <i class="fa-brands fa-tiktok"></i>
       </a>
-
-      <a
-        href="https://www.youtube.com/@bypedroneres"
-        target="_blank"
-        class="hover:text-zinc-900 transition"
-      >
+      <a href="https://www.youtube.com/@bypedroneres" target="_blank" class="hover:text-zinc-900 transition">
         <i class="fa-brands fa-youtube"></i>
       </a>
-
     </nav>
 
   </div>
 </header>
 
-  <!-- HERO -->
-  <section class="m-5 mb-20">
-    <h1 class="text-5xl font-semibold tracking-tight">
-      Quer entrar na área de programação em até 3 meses?
-    </h1>
+<div class="max-w-5xl mx-auto px-6 pt-24 pb-12">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    
+    <div>
+      <div class="flex items-center gap-2 mb-2 reveal">
+        <h1 class="text-5xl font-semibold tracking-tight leading-tight">
+          pedro neres
+        </h1>
 
-    <p class="mt-6 text-zinc-600 leading-relaxed">
-      Produtos e sistemas práticos para te levar do zero até sua primeira vaga como desenvolvedor — sem depender de cursos longos e confusos.
-    </p>
-  </section>
-
-  <!-- PRODUCTS -->
-  <section id="products" class="space-y-14">
-
-    <!-- PRODUCT 1 -->
-    <div class="grid md:grid-cols-2 gap-10 items-center bg-white rounded-2xl p-8 shadow-sm">
-
-      <div class="rounded-xl overflow-hidden">
-        <img
-          src="/images/br.jpeg"
-          alt="Dev OS BR"
-          class="w-full aspect-[4/3] object-cover"
-        />
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+        <polygon fill="#42a5f5" points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+        </polygon>
+        <polygon fill="#fff" points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+        </polygon>
+        </svg>
       </div>
 
-      <div>
-        <p class="text-sm text-zinc-500">Dev OS 🇧🇷</p>
+      <p class="text-zinc-500 leading-relaxed max-w-lg reveal">
+        engenheiro de software e criador de conteúdo 💻
+      </p>
+    </div>
 
-        <h2 class="text-3xl font-medium mt-2">
-          Vagas nacionais
-        </h2>
+    <div class="reveal">
+      <div class="rounded-2xl overflow-hidden max-w-md mx-auto">
+        <img
+          src="/images/reels/profile-pic.jpeg"
+          alt="Pedro Neres"
+          class="w-full h-[420px] object-cover object-[center_100%]"
+        />
+      </div>
+    </div>
 
-        <p class="mt-4 text-zinc-600 leading-relaxed">
-          Treinamento focado em te levar do zero até sua primeira vaga como desenvolvedor no Brasil.
-        </p>
+  </div>
+</div>
 
-        <p class="mt-4 text-sm text-zinc-500">
-          <span class="line-through">R$ 1997</span>
-          <span class="ml-2 font-medium text-black">R$ 697</span>
-        </p>
+<div class="border-y border-zinc-100 bg-zinc-50 py-14">
+  <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
 
-        <div class="mt-6 flex items-center gap-4">
-          <a href="https://pay.kiwify.com.br/pqo4ZQK"
-             class="px-5 py-2 bg-black text-white rounded-lg text-sm">
-            fazer parte
-          </a>
+    <div class="reveal">
+      <div class="text-4xl font-semibold tracking-tight text-zinc-900 mb-2">
+        16K+
+      </div>
+      <div class="text-xs tracking-widest uppercase text-zinc-400">
+        Seguidores
+      </div>
+    </div>
 
-          <a href="/dev-os-br.html"
-             class="text-sm text-zinc-600 hover:text-zinc-900 underline underline-offset-4">
-            ver detalhes
-          </a>
+    <div class="reveal">
+      <div class="text-4xl font-semibold tracking-tight text-zinc-900 mb-2">
+        3M+
+      </div>
+      <div class="text-xs tracking-widest uppercase text-zinc-400">
+        Visualizações
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="text-4xl font-semibold tracking-tight text-zinc-900 mb-2">
+        5+
+      </div>
+      <div class="text-xs tracking-widest uppercase text-zinc-400">
+        Anos em TI
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="text-4xl font-semibold tracking-tight text-zinc-900 mb-2">
+        100+
+      </div>
+      <div class="text-xs tracking-widest uppercase text-zinc-400">
+        Conteúdos Publicados
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SOBRE -->
+<div class="max-w-5xl mx-auto px-6" id="sobre">
+  <section class="py-20">
+    <div class="grid md:grid-cols-2 gap-14 items-center">
+
+      <div class="reveal">
+
+        <div class="rounded-2xl overflow-hidden">
+          <img src="/images/2EBBC2E1-A9C7-41AA-9846-28E7B171D334_1_105_c.jpeg" alt="Pedro Neres" class="w-full aspect-[4/3] object-cover" />
         </div>
       </div>
 
-    </div>
-
-    <!-- PRODUCT 2 -->
-    <div class="grid md:grid-cols-2 gap-10 items-center bg-white rounded-2xl p-8 shadow-sm">
-
-      <div class="rounded-xl overflow-hidden">
-        <img
-          src="/images/us.jpeg"
-          alt="Dev OS US"
-          class="w-full aspect-[4/3] object-cover"
-        />
-      </div>
-
-      <div>
-        <p class="text-sm text-zinc-500">Dev OS 🇺🇸 🇪🇺</p>
-
-        <h2 class="text-3xl font-medium mt-2">
-          Vagas internacionais
+      <div class="reveal">
+        <h2 class="text-3xl font-semibold tracking-tight text-zinc-900 mb-4">
+          quem sou eu?
         </h2>
+      <div class="space-y-4 text-zinc-500 leading-relaxed text-sm">
+        <p>Sou desenvolvedor de software e trabalho com tecnologia há mais de 5 anos.</p>
 
-        <p class="mt-4 text-zinc-600 leading-relaxed">
-          Estratégia para conseguir trabalho remoto internacional como desenvolvedor.
-        </p>
+        <p>Desde 2021 trabalho remotamente enquanto exploro diferentes países e culturas ao redor do mundo.</p>
 
-        <p class="mt-4 text-sm text-zinc-500">
-          <span class="line-through">R$ 2997</span>
-          <span class="ml-2 font-medium text-black">R$ 1497</span>
-        </p>
-
-        <div class="mt-6 flex items-center gap-4">
-          <a href="https://pay.kiwify.com.br/UFBVo4M"
-             class="px-5 py-2 bg-black text-white rounded-lg text-sm">
-            fazer parte
-          </a>
-
-          <a href="/dev-os-us.html"
-             class="text-sm text-zinc-600 hover:text-zinc-900 underline underline-offset-4">
-            ver detalhes
-          </a>
-        </div>
+        <p>Gosto de tecnologia, livros, idiomas e de compartilhar tudo o que aprendo ao longo da jornada.</p>
+      </div>
       </div>
 
     </div>
+  </section>
+</div>
 
+<div class="max-w-5xl mx-auto px-6">
+  
+  <section class="py-20">
+
+    <div class="reveal">
+      <h2 class="text-3xl font-semibold tracking-tight text-zinc-900 mb-10">templates</h2>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-5">
+
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-zinc-100 reveal">
+        <div class="rounded-xl overflow-hidden mb-4">
+          <img src="/images/template de estudos.png" class="w-full aspect-video object-cover" />
+        </div>
+        <h3 class="font-medium text-sm mb-1">Template de estudos</h3>
+        <p class="text-xs text-zinc-400 mb-1">Organize seus estudos como um dev profissional.</p>
+        <p class="text-sm font-medium mt-3 mb-4">R$ 19,97</p>
+        <a href="https://pay.kiwify.com.br/CIBlCeS" class="px-4 py-2 bg-black text-white rounded-lg text-sm inline-block hover:bg-zinc-800 transition">comprar</a>
+      </div>
+
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-zinc-100 reveal">
+        <div class="rounded-xl overflow-hidden mb-4">
+          <img src="/images/cv.png" class="w-full aspect-video object-cover" />
+        </div>
+        <h3 class="font-medium text-sm mb-1">Template de currículo</h3>
+        <p class="text-xs text-zinc-400 mb-1">modelo de CV que me fez conseguir minha primeira vaga internacional</p>
+        <p class="text-sm font-medium mt-3 mb-4">R$ 19,97</p>
+        <a href="https://pay.kiwify.com.br/KtozkIA" class="px-4 py-2 bg-black text-white rounded-lg text-sm inline-block hover:bg-zinc-800 transition">comprar</a>
+      </div>
+
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-zinc-100 reveal">
+        <div class="rounded-xl overflow-hidden mb-4">
+          <img src="/images/50.png" class="w-full aspect-video object-cover" />
+        </div>
+        <h3 class="font-medium text-sm mb-1">50 perguntas técnicas</h3>
+        <p class="text-xs text-zinc-400 mb-1">guia com diversas perguntas técnicas que acabam aparecendo em entrevistas</p>
+        <p class="text-sm font-medium mt-3 mb-4">R$ 19,97</p>
+        <a href="https://pay.kiwify.com.br/doo3qdg" class="px-4 py-2 bg-black text-white rounded-lg text-sm inline-block hover:bg-zinc-800 transition">comprar</a>
+      </div>
+
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-zinc-100 reveal">
+        <div class="rounded-xl overflow-hidden mb-4">
+          <img src="/images/roadmap.png" class="w-full aspect-video object-cover" />
+        </div>
+        <h3 class="font-medium text-sm mb-1">Roadmap full stack</h3>
+        <p class="text-xs text-zinc-400 mb-1">guia completo que eu segui para me tornar um desenvolvedor full stack</p>
+        <p class="text-sm font-medium mt-3 mb-4">R$ 75,00</p>
+        <a href="https://pay.kiwify.com.br/qHsYvlr" class="px-4 py-2 bg-black text-white rounded-lg text-sm inline-block hover:bg-zinc-800 transition">comprar</a>
+      </div>
+
+    </div>
   </section>
 
- <section class="mt-20">
-
-<h2 class="text-xl font-medium mb-8">materiais</h2>
-
-<div class="grid md:grid-cols-3 gap-6">
-
-  <div class="bg-white rounded-2xl p-6 shadow-sm">
-    <div class="rounded-xl overflow-hidden">
-      <img src="/images/template de estudos.png" class="w-full aspect-video object-cover" />
-    </div>
-
-    <h3 class="font-medium mt-4">Template de estudos</h3>
-    <p class="text-sm text-zinc-600 mt-2">
-      Organize seus estudos como um dev profissional.
-    </p>
-
-    <p class="mt-4 text-sm text-zinc-500">
-      <span class="font-medium text-black">R$ 19,97</span>
-    </p>
-
-    <div class="mt-6 flex items-center gap-4">
-      <a href="https://pay.kiwify.com.br/CIBlCeS"
-         class="px-4 py-2 bg-black text-white rounded-lg text-sm">
-        comprar
-      </a>
-
-      <!-- <a href="/template-estudos"
-         class="text-sm text-zinc-600 hover:text-zinc-900 underline underline-offset-4">
-        ver detalhes
-      </a> -->
-    </div>
-  </div>
-
-  <div class="bg-white rounded-2xl p-6 shadow-sm">
-    <div class="rounded-xl overflow-hidden">
-      <img src="/images/cv.png" class="w-full aspect-video object-cover" />
-    </div>
-
-    <h3 class="font-medium mt-4">Template de currículo</h3>
-    <p class="text-sm text-zinc-600 mt-2">
-      Otimizado para ser chamado para entrevistas.
-    </p>
-
-    <p class="mt-4 text-sm text-zinc-500">
-      <span class="font-medium text-black">R$ 19,97</span>
-    </p>
-
-    <div class="mt-6 flex items-center gap-4">
-      <a href="https://pay.kiwify.com.br/KtozkIA"
-         class="px-4 py-2 bg-black text-white rounded-lg text-sm">
-        comprar
-      </a>
-
-      <!-- <a href="/curriculo-dev"
-         class="text-sm text-zinc-600 hover:text-zinc-900 underline underline-offset-4">
-        ver detalhes
-      </a> -->
-    </div>
-  </div>
-
-  <div class="bg-white rounded-2xl p-6 shadow-sm">
-    <div class="rounded-xl overflow-hidden">
-      <img src="/images/50.png" class="w-full aspect-video object-cover" />
-    </div>
-
-    <h3 class="font-medium mt-4">50 perguntas técnicas</h3>
-    <p class="text-sm text-zinc-600 mt-2">
-      Guia completo para perder o medo de entrevistas técnicas.
-    </p>
-
-    <p class="mt-4 text-sm text-zinc-500">
-      <span class="font-medium text-black">R$ 19,97</span>
-    </p>
-
-    <div class="mt-6 flex items-center gap-4">
-      <a href="https://pay.kiwify.com.br/doo3qdg"
-         class="px-4 py-2 bg-black text-white rounded-lg text-sm">
-        comprar
-      </a>
-
-      <!-- <a href="/perguntas-tecnicas"
-         class="text-sm text-zinc-600 hover:text-zinc-900 underline underline-offset-4">
-        ver detalhes
-      </a> -->
-    </div>
-  </div>
-
-    <div class="bg-white rounded-2xl p-6 shadow-sm">
-    <div class="rounded-xl overflow-hidden">
-      <img src="/images/roadmap.png" class="w-full aspect-video object-cover" />
-    </div>
-
-    <h3 class="font-medium mt-4">roadmap full stack</h3>
-    <p class="text-sm text-zinc-600 mt-2">
-      Guia completo de estudos para se tornar um full stack.
-    </p>
-
-    <p class="mt-4 text-sm text-zinc-500">
-      <span class="font-medium text-black">R$ 75,00</span>
-    </p>
-
-    <div class="mt-6 flex items-center gap-4">
-      <a href="https://pay.kiwify.com.br/qHsYvlr"
-         class="px-4 py-2 bg-black text-white rounded-lg text-sm">
-        comprar
-      </a>
-
-      <!-- <a href="/perguntas-tecnicas"
-         class="text-sm text-zinc-600 hover:text-zinc-900 underline underline-offset-4">
-        ver detalhes
-      </a> -->
-    </div>
-  </div>
-
-</div>
-
-<!-- CONTEÚDOS GRATUITOS -->
-<!-- <section class="mt-24">
-
-  <div class="flex items-center justify-between mb-8">
-    <h2 class="text-xl font-medium">conteúdos gratuitos</h2>
-
-    <a
-      href="https://www.youtube.com/@bypedroneres"
-      target="_blank"
-      class="text-sm text-zinc-500 hover:text-zinc-900"
-    >
-      youtube
-    </a>
-  </div>
-
-  <div class="grid md:grid-cols-2 gap-6">
-
-<div class="rounded-xl overflow-hidden aspect-[9/16] bg-black">
-  <iframe
-    class="w-full h-full"
-    src="https://www.youtube.com/embed/qRdT0GG8oBE?autoplay=1&mute=1&loop=1&playlist=qRdT0GG8oBE&controls=0&modestbranding=1&rel=0"
-    title="YouTube Shorts"
-    frameborder="0"
-    allow="autoplay"
-    allowfullscreen
-  ></iframe>
-</div>
-
-  </div>
-
-</section> -->
-
-</section>
-
-  <footer class="mt-24 pt-10 border-t border-zinc-100 flex justify-between text-sm text-zinc-500">
+  <!-- FOOTER — igual ao original -->
+  <footer class="pt-10 border-t border-zinc-100 flex justify-between text-sm text-zinc-500 pb-12">
     <div>@2026</div>
     <div>bypedroneres@gmail.com</div>
   </footer>
 
 </div>
+
+<script>
+if ('IntersectionObserver' in window) {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+} else {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+}
+setTimeout(() => {
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible'));
+}, 2000);
+</script>
 
 </body>
 </html>
