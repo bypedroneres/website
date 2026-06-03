@@ -20,7 +20,7 @@
 
 <body class="bg-white text-zinc-900">
 
-<!-- HEADER — igual ao original -->
+<!-- HEADER -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur border-b border-zinc-100">
   <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
     <a href="/">
@@ -28,7 +28,6 @@
      alt="Pedro no Louvre"
      class="w-[30px] aspect-square object-cover object-center" />
     </a>
-
 
     <nav class="flex items-center gap-5 text-zinc-500 text-lg">
       <a href="https://instagram.com/pedro___neres" target="_blank" class="hover:text-zinc-900 transition">
@@ -41,7 +40,6 @@
         <i class="fa-brands fa-youtube"></i>
       </a>
     </nav>
-
   </div>
 </header>
 
@@ -84,39 +82,23 @@
   <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
 
     <div class="reveal">
-      <div class="text-4xl font-semibold tracking-tight text-zinc-900 mb-2">
-        16K+
-      </div>
-      <div class="text-xs tracking-widest uppercase text-zinc-400">
-        Seguidores
-      </div>
+      <div class="text-4xl font-semibold tracking-tight text-zinc-900 mb-2">16K+</div>
+      <div class="text-xs tracking-widest uppercase text-zinc-400">Seguidores</div>
     </div>
 
     <div class="reveal">
-      <div class="text-4xl font-semibold tracking-tight text-zinc-900 mb-2">
-        3M+
-      </div>
-      <div class="text-xs tracking-widest uppercase text-zinc-400">
-        Visualizações
-      </div>
+      <div class="text-4xl font-semibold tracking-tight text-zinc-900 mb-2">3M+</div>
+      <div class="text-xs tracking-widest uppercase text-zinc-400">Visualizações</div>
     </div>
 
     <div class="reveal">
-      <div class="text-4xl font-semibold tracking-tight text-zinc-900 mb-2">
-        5+
-      </div>
-      <div class="text-xs tracking-widest uppercase text-zinc-400">
-        Anos em TI
-      </div>
+      <div class="text-4xl font-semibold tracking-tight text-zinc-900 mb-2">5+</div>
+      <div class="text-xs tracking-widest uppercase text-zinc-400">Anos em TI</div>
     </div>
 
     <div class="reveal">
-      <div class="text-4xl font-semibold tracking-tight text-zinc-900 mb-2">
-        100+
-      </div>
-      <div class="text-xs tracking-widest uppercase text-zinc-400">
-        Conteúdos Publicados
-      </div>
+      <div class="text-4xl font-semibold tracking-tight text-zinc-900 mb-2">100+</div>
+      <div class="text-xs tracking-widest uppercase text-zinc-400">Conteúdos Publicados</div>
     </div>
 
   </div>
@@ -128,7 +110,6 @@
     <div class="grid md:grid-cols-2 gap-14 items-center">
 
       <div class="reveal">
-
         <div class="rounded-2xl overflow-hidden">
           <img src="/images/2EBBC2E1-A9C7-41AA-9846-28E7B171D334_1_105_c.jpeg" alt="Pedro Neres" class="w-full aspect-[4/3] object-cover" />
         </div>
@@ -138,19 +119,18 @@
         <h2 class="text-3xl font-semibold tracking-tight text-zinc-900 mb-4">
           quem sou eu?
         </h2>
-      <div class="space-y-4 text-zinc-500 leading-relaxed text-sm">
-        <p>Sou desenvolvedor de software e trabalho com tecnologia há mais de 5 anos.</p>
-
-        <p>Desde 2021 trabalho remotamente enquanto exploro diferentes países e culturas ao redor do mundo.</p>
-
-        <p>Gosto de tecnologia, livros, idiomas e de compartilhar tudo o que aprendo ao longo da jornada.</p>
-      </div>
+        <div class="space-y-4 text-zinc-500 leading-relaxed text-sm">
+          <p>Sou desenvolvedor de software e trabalho com tecnologia há mais de 5 anos.</p>
+          <p>Desde 2021 trabalho remotamente enquanto exploro diferentes países e culturas ao redor do mundo.</p>
+          <p>Gosto de tecnologia, livros, idiomas e de compartilhar tudo o que aprendo ao longo da jornada.</p>
+        </div>
       </div>
 
     </div>
   </section>
 </div>
 
+<!-- TEMPLATES -->
 <div class="max-w-5xl mx-auto px-6">
   
   <section class="py-20">
@@ -161,50 +141,63 @@
 
     <div class="grid md:grid-cols-4 gap-5">
 
-      <div class="bg-white rounded-2xl p-5 shadow-sm border border-zinc-100 reveal">
+      <!-- Template de estudos -->
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-zinc-100 reveal flex flex-col">
         <div class="rounded-xl overflow-hidden mb-4">
           <img src="/images/template de estudos.png" class="w-full aspect-video object-cover" />
         </div>
         <h3 class="font-medium text-sm mb-1">Template de estudos</h3>
         <p class="text-xs text-zinc-400 mb-1">Organize seus estudos como um dev profissional.</p>
         <p class="text-sm font-medium mt-3 mb-4">R$ 97,00</p>
-        <a href="https://pay.kiwify.com.br/CIBlCeS" class="px-4 py-2 bg-black text-white rounded-lg text-sm inline-block hover:bg-zinc-800 transition">comprar</a>
+        <div class="flex flex-col gap-2 mt-auto">
+          <a href="https://pay.kiwify.com.br/CIBlCeS" class="px-4 py-2 bg-black text-white rounded-lg text-sm text-center hover:bg-zinc-800 transition">comprar</a>
+          <a href="/template-estudos.html" class="px-4 py-2 bg-white text-zinc-600 rounded-lg text-sm text-center border border-zinc-200 hover:bg-zinc-50 transition">ver detalhes</a>
+        </div>
       </div>
 
-      <div class="bg-white rounded-2xl p-5 shadow-sm border border-zinc-100 reveal">
+      <!-- Template de currículo -->
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-zinc-100 reveal flex flex-col">
         <div class="rounded-xl overflow-hidden mb-4">
           <img src="/images/cv.png" class="w-full aspect-video object-cover" />
         </div>
         <h3 class="font-medium text-sm mb-1">Template de currículo</h3>
         <p class="text-xs text-zinc-400 mb-1">modelo de CV que me fez conseguir minha primeira vaga internacional</p>
         <p class="text-sm font-medium mt-3 mb-4">R$ 97,00</p>
-        <a href="https://pay.kiwify.com.br/KtozkIA" class="px-4 py-2 bg-black text-white rounded-lg text-sm inline-block hover:bg-zinc-800 transition">comprar</a>
+        <div class="flex flex-col gap-2 mt-auto">
+          <a href="https://pay.kiwify.com.br/KtozkIA" class="px-4 py-2 bg-black text-white rounded-lg text-sm text-center hover:bg-zinc-800 transition">comprar</a>
+        </div>
       </div>
 
-      <div class="bg-white rounded-2xl p-5 shadow-sm border border-zinc-100 reveal">
+      <!-- 50 perguntas técnicas -->
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-zinc-100 reveal flex flex-col">
         <div class="rounded-xl overflow-hidden mb-4">
           <img src="/images/50.png" class="w-full aspect-video object-cover" />
         </div>
         <h3 class="font-medium text-sm mb-1">50 perguntas técnicas</h3>
         <p class="text-xs text-zinc-400 mb-1">guia com diversas perguntas técnicas que acabam aparecendo em entrevistas</p>
         <p class="text-sm font-medium mt-3 mb-4">R$ 97,00</p>
-        <a href="https://pay.kiwify.com.br/doo3qdg" class="px-4 py-2 bg-black text-white rounded-lg text-sm inline-block hover:bg-zinc-800 transition">comprar</a>
+        <div class="flex flex-col gap-2 mt-auto">
+          <a href="https://pay.kiwify.com.br/doo3qdg" class="px-4 py-2 bg-black text-white rounded-lg text-sm text-center hover:bg-zinc-800 transition">comprar</a>
+        </div>
       </div>
 
-      <div class="bg-white rounded-2xl p-5 shadow-sm border border-zinc-100 reveal">
+      <!-- Roadmap full stack -->
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-zinc-100 reveal flex flex-col">
         <div class="rounded-xl overflow-hidden mb-4">
           <img src="/images/roadmap.png" class="w-full aspect-video object-cover" />
         </div>
         <h3 class="font-medium text-sm mb-1">Roadmap full stack</h3>
         <p class="text-xs text-zinc-400 mb-1">guia completo que eu segui para me tornar um desenvolvedor full stack</p>
         <p class="text-sm font-medium mt-3 mb-4">R$ 97,00</p>
-        <a href="https://pay.kiwify.com.br/qHsYvlr" class="px-4 py-2 bg-black text-white rounded-lg text-sm inline-block hover:bg-zinc-800 transition">comprar</a>
+        <div class="flex flex-col gap-2 mt-auto">
+          <a href="https://pay.kiwify.com.br/qHsYvlr" class="px-4 py-2 bg-black text-white rounded-lg text-sm text-center hover:bg-zinc-800 transition">comprar</a>
+        </div>
       </div>
 
     </div>
   </section>
 
-  <!-- FOOTER — igual ao original -->
+  <!-- FOOTER -->
   <footer class="pt-10 border-t border-zinc-100 flex justify-between text-sm text-zinc-500 pb-12">
     <div>@2026</div>
     <div>bypedroneres@gmail.com</div>

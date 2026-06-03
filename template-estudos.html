@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>template de estudos — pedro neres</title>
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <style>
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+    .blink { animation: blink 1.5s infinite; }
+    .reveal { opacity:0; transform:translateY(18px); transition:opacity .65s, transform .65s; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-title { animation: fadeUp .7s ease both; }
+    .hero-sub   { animation: fadeUp .7s .15s ease both; }
+    .hero-cta   { animation: fadeUp .7s .3s ease both; }
+
+    .check-item::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background: #18181b;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-zinc-900">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur border-b border-zinc-100">
+  <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/">
+      <img src="/images/favicon.png" alt="Pedro no Louvre" class="w-[30px] aspect-square object-cover object-center" />
+    </a>
+    <nav class="flex items-center gap-5 text-zinc-500 text-lg">
+      <a href="https://instagram.com/pedro___neres" target="_blank" class="hover:text-zinc-900 transition">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@pedro__neres" target="_blank" class="hover:text-zinc-900 transition">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+      <a href="https://www.youtube.com/@bypedroneres" target="_blank" class="hover:text-zinc-900 transition">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="max-w-5xl mx-auto px-6 pt-32 pb-16">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <span class="hero-title inline-block text-xs tracking-widest uppercase text-zinc-400 mb-4">template notion</span>
+      <h1 class="hero-title text-5xl font-semibold tracking-tight leading-tight mb-4">
+        template de<br/>estudos
+      </h1>
+      <p class="hero-sub text-zinc-500 leading-relaxed mb-8 max-w-md">
+        o template do Notion que eu uso todos os dias para organizar meus estudos como desenvolvedor — agora disponível pra você.
+      </p>
+      <div class="hero-cta flex items-center gap-4">
+        <a href="https://pay.kiwify.com.br/CIBlCeS" class="px-6 py-3 bg-black text-white rounded-xl text-sm font-medium hover:bg-zinc-800 transition">
+          comprar por R$ 97,00
+        </a>
+        <span class="text-xs text-zinc-400">acesso imediato após o pagamento</span>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="rounded-2xl overflow-hidden border border-zinc-100 shadow-sm">
+        <img src="/images/template de estudos.png" alt="Template de Estudos" class="w-full aspect-video object-cover" />
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- O QUE ESTÁ INCLUSO -->
+<div class="border-y border-zinc-100 bg-zinc-50 py-14">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="reveal mb-10">
+      <h2 class="text-2xl font-semibold tracking-tight text-zinc-900">o que você recebe</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-zinc-100 shadow-sm">
+        <div class="w-10 h-10 bg-zinc-900 rounded-xl flex items-center justify-center mb-4">
+          <i class="fa-regular fa-file text-white text-sm"></i>
+        </div>
+        <h3 class="font-medium text-sm mb-2">template Notion completo</h3>
+        <p class="text-xs text-zinc-400 leading-relaxed">acesso direto ao template que eu uso no dia a dia para organizar roadmaps, anotações, revisões e progresso de aprendizado.</p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-zinc-100 shadow-sm">
+        <div class="w-10 h-10 bg-zinc-900 rounded-xl flex items-center justify-center mb-4">
+          <i class="fa-regular fa-circle-play text-white text-sm"></i>
+        </div>
+        <h3 class="font-medium text-sm mb-2">vídeo explicativo</h3>
+        <p class="text-xs text-zinc-400 leading-relaxed">vídeo mostrando como eu utilizo o template na prática — cada seção, cada bloco, cada detalhe explicado.</p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-zinc-100 shadow-sm">
+        <div class="w-10 h-10 bg-zinc-900 rounded-xl flex items-center justify-center mb-4">
+          <i class="fa-regular fa-clock text-white text-sm"></i>
+        </div>
+        <h3 class="font-medium text-sm mb-2">acesso vitalício</h3>
+        <p class="text-xs text-zinc-400 leading-relaxed">todas as atualizações futuras do template incluídas sem custo adicional. pague uma vez, use para sempre.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- SOBRE O TEMPLATE -->
+<div class="max-w-5xl mx-auto px-6 py-20">
+  <div class="grid md:grid-cols-2 gap-14 items-center">
+
+    <div class="reveal">
+      <h2 class="text-3xl font-semibold tracking-tight text-zinc-900 mb-4">
+        depois de anos usando o Notion, esse é o template que ficou
+      </h2>
+      <div class="space-y-4 text-zinc-500 leading-relaxed text-sm">
+        <p>
+          Trabalho com tecnologia há mais de 5 anos e aprendi muita coisa no caminho — linguagens, frameworks, ferramentas, conceitos. O maior desafio nunca foi encontrar conteúdo. Foi organizar o que eu já sabia e decidir o que estudar a seguir.
+        </p>
+        <p>
+          Passei por dezenas de apps de produtividade, cadernos físicos, planilhas. O que realmente funcionou foi o Notion — mas só quando eu parei de usar templates genéricos e montei algo do zero, pensado para como um desenvolvedor de software aprende.
+        </p>
+        <p>
+          Esse template é o que ficou depois de tudo isso. Simples o suficiente pra não virar um projeto em si, robusto o suficiente pra realmente te ajudar a evoluir.
+        </p>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="space-y-3">
+
+        <div class="flex items-start gap-3 p-4 rounded-xl border border-zinc-100">
+          <div class="w-5 h-5 rounded-full bg-zinc-900 flex-shrink-0 mt-0.5 flex items-center justify-center">
+            <i class="fa-solid fa-check text-white" style="font-size:9px"></i>
+          </div>
+          <div>
+            <p class="text-sm font-medium">roadmap de estudos</p>
+            <p class="text-xs text-zinc-400 mt-0.5">organize o que você quer aprender com prioridade e prazo</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-4 rounded-xl border border-zinc-100">
+          <div class="w-5 h-5 rounded-full bg-zinc-900 flex-shrink-0 mt-0.5 flex items-center justify-center">
+            <i class="fa-solid fa-check text-white" style="font-size:9px"></i>
+          </div>
+          <div>
+            <p class="text-sm font-medium">banco de anotações</p>
+            <p class="text-xs text-zinc-400 mt-0.5">capture conceitos, links e resumos sem perder nada</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-4 rounded-xl border border-zinc-100">
+          <div class="w-5 h-5 rounded-full bg-zinc-900 flex-shrink-0 mt-0.5 flex items-center justify-center">
+            <i class="fa-solid fa-check text-white" style="font-size:9px"></i>
+          </div>
+          <div>
+            <p class="text-sm font-medium">tracker de progresso</p>
+            <p class="text-xs text-zinc-400 mt-0.5">veja claramente quanto você já evoluiu ao longo do tempo</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-4 rounded-xl border border-zinc-100">
+          <div class="w-5 h-5 rounded-full bg-zinc-900 flex-shrink-0 mt-0.5 flex items-center justify-center">
+            <i class="fa-solid fa-check text-white" style="font-size:9px"></i>
+          </div>
+          <div>
+            <p class="text-sm font-medium">revisão espaçada</p>
+            <p class="text-xs text-zinc-400 mt-0.5">sistema para revisar o que aprendeu e não esquecer</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-4 rounded-xl border border-zinc-100">
+          <div class="w-5 h-5 rounded-full bg-zinc-900 flex-shrink-0 mt-0.5 flex items-center justify-center">
+            <i class="fa-solid fa-check text-white" style="font-size:9px"></i>
+          </div>
+          <div>
+            <p class="text-sm font-medium">dashboard central</p>
+            <p class="text-xs text-zinc-400 mt-0.5">uma visão geral de tudo num único lugar</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- PARA QUEM É -->
+<div class="border-y border-zinc-100 bg-zinc-50 py-16">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <div class="reveal mb-10">
+      <h2 class="text-2xl font-semibold tracking-tight text-zinc-900">pra quem é esse template?</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-5">
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-zinc-100">
+        <p class="text-sm text-zinc-700 leading-relaxed">
+          👨‍💻 <span class="font-medium">desenvolvedores</span> que querem aprender novas tecnologias sem perder o fio da meada no trabalho.
+        </p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-zinc-100">
+        <p class="text-sm text-zinc-700 leading-relaxed">
+          🎯 <span class="font-medium">quem está estudando pra transição de carreira</span> e precisa de um plano claro de onde chegar.
+        </p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-zinc-100">
+        <p class="text-sm text-zinc-700 leading-relaxed">
+          📚 <span class="font-medium">estudantes de programação</span> que se perdem no meio de tantos cursos, tutoriais e conteúdos na internet.
+        </p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-zinc-100">
+        <p class="text-sm text-zinc-700 leading-relaxed">
+          🌍 <span class="font-medium">quem quer trabalhar remotamente</span> e precisa desenvolver habilidades técnicas de forma consistente.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- CTA FINAL -->
+<div class="max-w-5xl mx-auto px-6 py-20 text-center">
+  <div class="reveal">
+    <h2 class="text-4xl font-semibold tracking-tight text-zinc-900 mb-4">
+      pronto pra organizar seus estudos?
+    </h2>
+    <p class="text-zinc-500 text-sm mb-8 max-w-md mx-auto leading-relaxed">
+      acesso imediato ao template + vídeo explicativo logo após o pagamento.
+    </p>
+    <a href="https://pay.kiwify.com.br/CIBlCeS" class="inline-block px-8 py-4 bg-black text-white rounded-xl text-sm font-medium hover:bg-zinc-800 transition">
+      comprar por R$ 97,00
+    </a>
+    <p class="text-xs text-zinc-400 mt-4">pagamento seguro via Kiwify · boleto, pix ou cartão</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="max-w-5xl mx-auto px-6">
+  <footer class="pt-10 border-t border-zinc-100 flex justify-between text-sm text-zinc-500 pb-12">
+    <div>@2026</div>
+    <div>bypedroneres@gmail.com</div>
+  </footer>
+</div>
+
+<script>
+if ('IntersectionObserver' in window) {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+} else {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+}
+setTimeout(() => {
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible'));
+}, 2000);
+</script>
+
+</body>
+</html>
